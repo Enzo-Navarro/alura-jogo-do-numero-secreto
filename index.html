@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--linha de baixo responsavel por trazer alguns codigos em java script para o nosso projeto capaz de falar, entao a gente escreve o texto e ele é capaz de narrar aquilo que a gente ta passando pra ele, não e algo nativo do java script então se não tiver o import ele não funciona se quiser saber mais pesquisa responsive voice provavelmente no primeiro link-->>
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>JS Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__conteudo">
+                <div class="container__informacoes">
+                    <div class="container__texto">
+                        <h1></h1>
+                        <p class="texto__paragrafo"></p>
+                    </div>
+                    <input type="number" min="1" max="10" class="container__input">
+                    <div class="chute container__botoes">
+                        <button onclick="verificarChute()" class="container__botao">Chutar</button>
+                        <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+                    </div>
+                </div>
+                <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+            </div>
+        </div>
+        <script src="app.js" defer></script>
+    </body>
+</html>
